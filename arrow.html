@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //* sum of numbers using arrow function *//
+        
+        var sumarrow=(arr)=>{
+        var total=0;
+        for(i=0;i<arr.length;i++){
+            total=total+arr[i]
+        }
+        console.log(total)
+    }
+    sumarrow([1,2,3,4,5,6,7,8,9,10,11,12,13]);
+
+
+
+    //* odd numbers using arrow *//
+
+    var oddarrow=(arr)=>{
+        var result=[];
+        for(let i of arr) {
+            if (i % 2 != 0) result.push(i);
+        }
+        console.log(result);
+    }
+    oddarrow([1,2,3,4,5,6,7,8,9]);
+
+
+
+    //* title caps using arrow *//
+
+    let str=(str1)=> {
+        let arr=[];
+        str1=str1.toLowerCase().split(" ");
+        for(i=0;i<str1.length;i++)
+        {
+            arr.push(str1[i].charAt(0).toUpperCase() + str1[i].slice(1));
+        }
+        return console.log(...arr);
+        }
+        (str("being myself"));
+
+
+
+    //* return primes using arrow *//
+
+    let arr5=(arr4)=> {
+        let arr=[];
+        for(let i=0;i<num;i++){
+    if(num%i===0)
+    return num!==1;
+    }
+    console.log(...arr);
+}
+arr5[2,3,4,5,6,7,8,9,10];
+
+
+
+        //* palindrome using arrow *//
+
+        let palindrome=(arr)=> {
+    var len=arr.length;
+    for(var i=0;i<len/2;i++) {
+        if(arr[i] !=arr[len-1-i]){
+            return "It is not a palindrome";
+        }
+    }
+    console.log([arr + " " +" is a palindrome"]);
+}
+palindrome([4,5,6,5,4])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
